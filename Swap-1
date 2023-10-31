@@ -1,0 +1,14 @@
+function swap(a){
+  const str = a.toString();
+   if(str.length % 2 !== 0)
+     {
+       return("entered wrong");
+     }
+  let swap1 = ' ';
+  for(let i = 0 ; i < str.length ; i += 2 ){
+    swap1 += str[ i + 1] + str[i];
+  }
+  return parseInt(swap1);
+}
+document.write(swap(2345));
+document.write(swap(9654));
