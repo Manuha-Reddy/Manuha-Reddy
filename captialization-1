@@ -1,0 +1,14 @@
+function capital(a){
+    let result = '';
+    for (let i = 0; i < a.length; i++) {
+        let char = a[i];
+        if (char === char.toUpperCase()) {
+            result += char.toLowerCase();
+        } else {
+            result += char.toUpperCase();
+        }
+    }
+    return result;
+}
+let a1 = "hello World";
+document.write(capital(a1));
